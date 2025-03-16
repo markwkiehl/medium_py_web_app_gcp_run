@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- 	Paged CSS based on Skeleton-2.0.4 
+		https://www.sitepoint.com/getting-started-with-skeleton-simple-css-boilerplate/
+  
+		Tutorials:
+			https://time2hack.com/responsive-web-design-with-skeleton/
+	
+  -->
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="Mechatronic Solutions LLC">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+  -->
+  
+  <!-- The {{ url_for('static', filename='css/skeleton.css') }} generates the correct URL for static files. -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/skeleton.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link rel="icon" type="image/png" href="images/favicon.ico"> -->
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+<div class="container">
+  <div class="row">
+		<div class="one-column">
+			<p style="font-size: 3.0rem;">Website Title</p>
+			<h1>Page Title</h1>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- ==================================================================================== -->
+
+
+
+{% if chat_history %}
+<div class="container">
+	<!-- put the <hr/> tag here if needed ... 
+	<hr/>
+	-->
+	<div class="whitesmokebkg">	<!-- div background colors are: whitebkg, whitesmokebkg, cyanbkg, limebkg, darkgreenbkg, pythonblueebkg, darklimebkg, southwestbkg  -->
+		<div class="gridcontentpadded">	<!-- adds padding around text/images -->
+		
+			<div class="row">
+				<div class="one-column">
+					<h2>Chat History</h2>
+					{{ chat_history }}
+				</div>	<!-- one-column -->
+			</div>	<!-- row -->
+
+		
+		</div>	<!-- gridcontentpadded -->
+	</div>	<!-- background color -->
+</div>	<!-- container -->
+<p>&nbsp;</p>
+{% endif %}
+
+
+
+
+
+<!-- ==================================================================================== -->
+
+
+<div class="container">
+	<hr/>
+	<!-- <h2>Heading 2</h2> -->
+	
+    <form action="/" method="POST">
+        <label for="user_input">Query:</label>
+        <!-- <input class="button-primary" type="text" id="user_input" name="user_input" required> -->
+		<textarea class="u-full-width" placeholder="" id="user_input" name="user_input" required></textarea>
+		<input class="button-primary" type="submit" value="Submit"> &nbsp; &nbsp; <a class="button" href="index.html">Reset</a>
+    </form>
+
+	<!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
+</div>	<!-- container -->
+
+
+<div class="container">
+	<div class="whitebkg">	<!-- div background colors are: whitebkg, whitesmokebkg, cyanbkg, limebkg, darkgreenbkg, pythonblueebkg, darklimebkg, southwestbkg  -->
+		
+			<div class="row">
+				<div class="one-column">
+					<textarea class="u-full-width" placeholder="{{ app_info }}" id="txt_app_info" name="txt_app_info" required></textarea>
+				</div>	<!-- one-column -->
+			</div>	<!-- row -->
+
+		
+	</div>	<!-- background color -->
+</div>	<!-- container -->
+
+<!-- footer
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<div class="container">
+	<div class="whitebkg">
+		<hr/>
+		<div class="row">
+			<div class="one-column">
+				<p style="text-align:center">Copyright &copy; 2025 <a href="http://mechatronicsolutionsllc.com/" target="_blank">Mechatronic Solutions LLC</a>, All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

@@ -1,0 +1,14 @@
+GCP_USER=your_email_address@gmail.com
+GCP_SVC_ACT_PREFIX=svc-act-gcp-run-flask
+GCP_PYTHON_VERSION=3.12
+PYTHON_FILENAME=gcp_run_vol_mt_flask.py
+GCP_PROJ_ID=gcp-run-flask-v0-0-0
+GCP_BILLING_ACCOUNT=0X0X0X-0X0X0X-0X0X0X
+GCP_REGION=us-east4
+GCP_IMAGE=img-gcp-run-flask
+GCP_REPOSITORY=repo-gcp-run-flask
+GCP_RUN_JOB=gcp-job-svc-flask
+GCP_RUN_JOB_VOL_NAME=gcp-run-flask
+GCP_RUN_JOB_VOL_MT_PATH=/mnt/storage
+GCP_GS_BUCKET=gs-bucket-run-flask-v0-0-0
+GCP_GS_BUCKET_LOCATION=us

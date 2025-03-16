@@ -1,0 +1,276 @@
+
+
+/*
+a {
+  color: #044123; 
+	font-weight: 700;	
+	text-decoration: none;
+}
+a:hover {
+  color: #ffffff; 
+	background:#044123; 
+	text-decoration:underline;
+}
+*/
+
+blockquote {
+  margin: 0;
+  padding: 0 20px;
+  background: #F5F5F5;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.gridcontentpadded {
+	/* use gridcontentpadded to add padding around text/images. */
+	padding: 1rem;
+}
+
+/*  Tables
+	https://css-tricks.com/complete-guide-table-element/
+	https://www.textfixer.com/tutorials/css-tables.php
+	http://cssmenumaker.com/blog/stylish-css-tables-tutorial/
+
+*/
+
+table.gridtable {
+	/*
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	*/
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+table.gridtable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+table.gridtable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+}
+
+table.noBorder {
+    border-collapse: collapse; 
+	border-spacing: 0;
+	border: 0;
+}
+table.noBorder th {
+    border-collapse: collapse; 
+	border-spacing: 0;
+	border: 0;
+}
+table.noBorder td {
+    border-collapse: collapse; 
+	border-spacing: 0;
+	border: 0;
+}
+
+
+/* Values
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.values {
+  background-image: url('../images/values-bg.jpg');
+  background-size: cover;
+  color: #fff;
+}
+
+.values blockquote {
+  color: #212529;
+}
+/*
+.value-multiplier {
+  margin-bottom: .5rem;
+  color: #11DFC7;
+}
+.value-heading {
+  margin-bottom: .3rem;
+}
+.value-description {
+  opacity: .8;
+  font-weight: 300;
+}
+*/
+
+
+/* whitebkg
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.whitebkg {
+  background-size: cover;
+  color: #212529;
+  /* padding-bottom: 5rem; */
+}
+.whitebkg a {
+  color: #044123; 
+	font-weight: 700;	/* 700 = bold */
+	text-decoration: none;
+}
+.whitebkg a:hover {
+	text-decoration: underline;
+}
+
+
+/* whitesmokebkg
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.whitesmokebkg {
+	background-color: #f4f4f4;
+  background-size: cover;
+  color: #212529;
+  /* padding-bottom: 5rem; */
+}
+.whitesmokebkg a {
+  color: #044123; 
+	font-weight: 700;	/* 700 = bold */
+	text-decoration: none;
+}
+.whitesmokebkg a:hover {
+	text-decoration: underline;
+}
+
+.whitesmokebkg blockquote {
+  margin: 0;
+  padding: 0 20px;
+  background: #fff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+/* limebkg
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.limebkg {
+	background-color: #eaebde;
+  background-size: cover;
+  color: #212529;
+  /* padding-bottom: 5rem; */
+}
+.limebkg a {
+  color: #044123; 
+	font-weight: 700;	/* 700 = bold */
+	text-decoration: none;
+}
+.limebkg a:hover {
+	text-decoration: underline;
+}
+
+
+/* cyanbkg
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.cyanbkg {
+	background-color: #e5feff;
+  background-size: cover;
+  color: #212529;
+  /* padding-bottom: 5rem; */
+}
+.cyanbkg a {
+  color: #044123; 
+	font-weight: 700;	/* 700 = bold */
+	text-decoration: none;
+}
+.cyanbkg a:hover {
+	text-decoration: underline;
+}
+
+.cyanbkg blockquote {
+  color: #212529;
+}
+
+/* DarkGreenBkg  (NI colors)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.darkgreenbkg {
+	background-color: #044123;
+  background-size: cover;
+  color: #ffffff;
+  /* padding-bottom: 5rem; */
+}
+.darkgreenbkg a {
+  color: #ffffff; 
+	font-weight: 700;	/* 700 = bold */
+	text-decoration: none;
+}
+.darkgreenbkg a:hover {
+  color: #ffffff; 
+	text-decoration:underline;
+}
+
+.darkgreenbkg blockquote {
+  color: #212529;
+}
+
+/* PythonBlue  (Python colors)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.pythonblueebkg {
+	background-color: #275a84 ;
+  background-size: cover;
+  color: #ffffff;
+  /* padding-bottom: 5rem; */
+}
+.pythonblueebkg a {
+  color: #ffffff; 
+	font-weight: 700;	/* 700 = bold */
+	text-decoration: none;
+}
+.pythonblueebkg a:hover {
+  color: #ffffff; 
+	text-decoration:underline;
+}
+
+.pythonblueebkg blockquote {
+  color: #212529;
+}
+
+/* DarkLimeBbkg
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.darklimebkg {
+	background-color: #70802e;
+  background-size: cover;
+  color: #ffffff;
+  /* padding-bottom: 5rem; */
+}
+.darklimebkg a {
+  color: #ffffff; 
+	font-weight: 700;	/* 700 = bold */
+	text-decoration: none;
+}
+.darklimebkg a:hover {
+  color: #ffffff; 
+	text-decoration:underline;
+}
+
+.darklimebkg blockquote {
+  color: #212529;
+}
+
+/* southwestbkg
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.southwestbkg {
+	background-color: #AE5835;
+  background-size: cover;
+  color: #ffffff;
+  /* padding-bottom: 5rem; */
+}
+.southwestbkg a {
+  color: #ffffff; 
+	font-weight: 700;	/* 700 = bold */
+	text-decoration: none;
+}
+.southwestbkg a:hover {
+  color: #ffffff; 
+	text-decoration:underline;
+}
+
+.southwestbkg blockquote {
+  color: #212529;
+}
