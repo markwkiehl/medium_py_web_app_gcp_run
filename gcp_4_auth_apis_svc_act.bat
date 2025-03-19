@@ -111,12 +111,12 @@ IF %ERRORLEVEL% NEQ 0 (
 	EXIT /B
 )
 
-rem Enable containerscanning.googleapis.com
-CALL gcloud services enable containerscanning.googleapis.com
-IF %ERRORLEVEL% NEQ 0 (
-	echo ERROR %ERRORLEVEL%: gcloud services enable containerscanning.googleapis.com
-	EXIT /B
-)
+rem Enable containerscanning.googleapis.com  COST IS $1.56/day !!!!
+rem CALL gcloud services enable containerscanning.googleapis.com
+rem IF %ERRORLEVEL% NEQ 0 (
+rem 	echo ERROR %ERRORLEVEL%: gcloud services enable containerscanning.googleapis.com
+rem 	EXIT /B
+rem )
 
 
 rem Configure authentication to Artifact Registry for Docker
